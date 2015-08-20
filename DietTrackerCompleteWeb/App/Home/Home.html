@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <script src="https://oep.azurewebsites.net/preview/4229.1002/office.runtime.js" type="text/javascript"></script>
+    <script src="https://oep.azurewebsites.net/preview/4229.1002/Excel.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://agave.azurewebsites.net/Fabric/css/fabric.min.css">
+    <link rel="stylesheet" href="https://agave.azurewebsites.net/Fabric/css/fabric.components.min.css">
+
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content-header">
+        <div class="padding">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+
+            <button onclick="getMyDietData();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">1. Get Data</span><span class="ms-Button-description">Import diet data from an external data source</span>
+            </button> <br /><br />
+            <button onclick="formatMyDietData();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">2. Format</span><span class="ms-Button-description">Use formatting capabilites to layout and format the data</span>
+            </button> <br /><br />
+            <button onclick="highlightMax();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">3. Highlight</span><span class="ms-Button-description">Identify and highlight the row with most calories</span>
+            </button> <br /><br />
+            <button onclick="createDashboardWorksheet();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">4. Create Goals Sheet</span><span class="ms-Button-description">Create a new worksheet to use as a dashboard for diet goals</span>
+            </button> <br /><br />
+            <button onclick="formatGoals();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">5. Generate Template</span><span class="ms-Button-description">Create a template to capture goals using formatting capabilities and absolute positioning</span>
+            </button> <br /><br />
+            <button onclick="insertGoals();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">6. Insert Goals</span><span class="ms-Button-description">Import goals from external data source and write the data according to the template</span>
+            </button> <br /><br />
+            <button onclick="createChart();" class="ms-Button ms-Button--compound">
+                <span class="ms-Button-label">7. Create Chart</span><span class="ms-Button-description">Create a chart to analyze goals vs. calorie consumption</span>
+            </button> <br /><br />
+
+        </div>
+    </div>
+</body>
+</html>
